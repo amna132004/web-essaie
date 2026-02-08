@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Découvrez la Tunisie - Destinations de Rêve</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.avif" alt="Logo Tunisie" />
+      </div>
+      <h3 class="tagline">Découvrez les plus beaux trésors de la Tunisie</h3>
+      <nav>
+        <a href="#accueil" class="nav-link">
+          <span class="icon">🏠</span>
+          <span>Accueil</span>
+        </a>
+        <a href="#formulaire" class="nav-link">
+          <span class="icon">📝</span>
+          <span>Contact</span>
+        </a>
+        <a href="#carte" class="nav-link">
+          <span class="icon">🗺️</span>
+          <span>Carte</span>
+        </a>
+        <a href="#destinations" class="nav-link">
+          <span class="icon">✨</span>
+          <span>Destinations</span>
+        </a>
+      </nav>
+    </header>
+
+    <div class="intro" id="accueil">
+      <img src="images/tunisie.jpg" alt="Paysage de Tunisie" />
+      <div class="overlay"></div>
+      <div class="text">
+        <h1 class="hero-title">Explorez la Tunisie</h1>
+        <p class="hero-subtitle">
+          Découvrez des destinations inoubliables, savourez une cuisine
+          délicieuse et vivez des expériences authentiques
+        </p>
+        <a href="#carte" class="cta-button">Commencer l'exploration</a>
+      </div>
+    </div>
+
+    <div class="features-section">
+      <div class="feature-card">
+        <div class="feature-icon">🏖️</div>
+        <h3>Plages Paradisiaques</h3>
+        <p>Des côtes méditerranéennes aux eaux cristallines</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🍽️</div>
+        <h3>Gastronomie Raffinée</h3>
+        <p>Savourez les meilleures spécialités tunisiennes</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏛️</div>
+        <h3>Patrimoine Riche</h3>
+        <p>Découvrez l'histoire millénaire de la Tunisie</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌄</div>
+        <h3>Paysages Variés</h3>
+        <p>Du désert saharien aux montagnes verdoyantes</p>
+      </div>
+    </div>
+
+    <div class="map" id="carte">
+      <div class="text">
+        <h1>Découvrez les Meilleures Destinations</h1>
+        <p>
+          Quelle région voulez-vous visiter aujourd'hui ? Laissez-vous guider,
+          découvrez ses trésors, savourez ses restaurants, et profitez d'une
+          nuit agréable dans ses hébergements les plus confortables.
+        </p>
+      </div>
+      <div class="map-container">
+        <img
+          src="images/tunisie_carte.jpg"
+          usemap="#tunisieCarte"
+          alt="Carte de la Tunisie"
+          title="Carte de la Tunisie"
+        />
+        <div id="plane" class="plane">✈️</div>
+      </div>
+    </div>
+
+    <div class="cta" id="destinations">
+      <div class="cta-content">
+        <h1>Réservez Maintenant Vos Destinations</h1>
+        <p>
+          Cliquez sur la région que vous souhaitez visiter et choisissez où vous
+          préférez passer votre temps. N'oubliez pas de réserver le plus tôt
+          possible pour profiter des meilleures offres !
+        </p>
+        <a href="#formulaire" class="cta-button secondary"
+          >Je réserve maintenant</a
+        >
+      </div>
+    </div>
+
+    <map name="tunisieCarte">
+      <area
+        shape="poly"
+        coords="192,417, 189,445, 195,457, 202,464, 218,468, 220,480, 253,480, 151,566, 128,506, 140,462, 156,460, 163,432"
+        data-link="tozeur.html"
+        alt="Tozeur"
+      />
+    </map>
+
+    <div class="contact-section" id="formulaire">
+      <div class="box">
+        <form id="contact-form">
+          <h2>Contactez-nous</h2>
+          <p class="form-subtitle">
+            Nous sommes là pour vous aider à planifier votre voyage
+          </p>
+
+          <div class="form-group">
+            <label>Nom</label>
+            <input type="text" placeholder="Entrez votre nom" required />
+          </div>
+
+          <div class="form-group">
+            <label>Prénom</label>
+            <input type="text" placeholder="Entrez votre prénom" required />
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="exemple@mail.com" required />
+          </div>
+
+          <div class="form-group">
+            <label>Téléphone</label>
+            <input type="tel" placeholder="Votre numéro" />
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea
+              placeholder="Écrivez votre message..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" class="btn-submit">
+              <span>Envoyer</span>
+              <span class="btn-icon">📤</span>
+            </button>
+            <button type="reset" class="btn-reset">
+              <span>Réinitialiser</span>
+            </button>
+          </div>
+        </form>
+
+        <div class="social-box">
+          <h2>Suivez-nous</h2>
+          <p>
+            Restez connectés pour découvrir nos dernières offres et destinations
+          </p>
+
+          <div class="social-links">
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              class="social-btn insta"
+            >
+              <span class="social-icon">📷</span>
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://facebook.com/"
+              target="_blank"
+              class="social-btn fb"
+            >
+              <span class="social-icon">📘</span>
+              <span>Facebook</span>
+            </a>
+          </div>
+
+          <div class="info-box">
+            <h3>Informations Pratiques</h3>
+            <p>📧 contact@tunisie-voyage.com</p>
+            <p>📞 +216 XX XXX XXX</p>
+            <p>📍 Tunis, Tunisie</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Découvrez la Tunisie A&A. Tous droits réservés.</p>
+        <p class="footer-tagline">
+          Votre passerelle vers l'authenticité tunisienne ✨
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const mapAreas = document.querySelectorAll("area");
+      const plane = document.getElementById("plane");
+      const mapImage = document.querySelector("img[usemap]");
+
+      mapAreas.forEach((area) => {
+        area.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          const targetX = e.clientX;
+          const targetY = e.clientY;
+
+          const imgRect = mapImage.getBoundingClientRect();
+          const startX = imgRect.left;
+          const startY = imgRect.top;
+
+          plane.style.left = startX + "px";
+          plane.style.top = startY + "px";
+          plane.style.opacity = 1;
+
+          const duration = 2000;
+
+          plane.animate(
+            [
+              { transform: "translate(0,0)" },
+              {
+                transform: `translate(${targetX - startX}px, ${
+                  targetY - startY
+                }px)`,
+              },
+            ],
+            {
+              duration: duration,
+              easing: "ease-in-out",
+              fill: "forwards",
+            }
+          );
+
+          const targetPage = area.dataset.link;
+
+          setTimeout(() => {
+            window.location.href = targetPage;
+          }, duration);
+        });
+      });
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Form submission
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Merci pour votre message ! Nous vous contacterons bientôt.");
+          this.reset();
+        });
+    </script>
+  </body>
+</html>
